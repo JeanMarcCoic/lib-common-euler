@@ -1,0 +1,10 @@
+/.build-*
+*.blk.c
+*.blkk.cc
+*.pyo
+*.pyc
+
+/.lock-waf*
+
+.syntastic*
+.local_vimrc.vim

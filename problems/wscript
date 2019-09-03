@@ -1,0 +1,9 @@
+def build(ctx):
+    problems = [
+        18,
+    ]
+
+    for problem in problems:
+        ctx.program(target='{0}/run-euler-{0}'.format(problem),
+                    source='{0}/euler-{0}.c'.format(problem),
+                    use=['libcommon'])
