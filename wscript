@@ -36,5 +36,7 @@ def configure(ctx):
 
 def build(ctx):
     ctx.recurse(['lib-common', 'problems'])
+    ctx.program(target='hello-world', source='hello-world.c',
+                use=['libcommon'])
 
 # }}}

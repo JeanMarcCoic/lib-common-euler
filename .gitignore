@@ -8,3 +8,5 @@
 
 .syntastic*
 .local_vimrc.vim
+
+/hello-world
