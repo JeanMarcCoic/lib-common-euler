@@ -1,0 +1,6 @@
+= lib-common-euler
+
+This project is a small example project on using the lib-common to solve some problems from the Euler project.
+
+lib-common: https://github.com/Intersec/lib-common
+Project Euler: https://projecteuler.net/
