@@ -79,6 +79,8 @@ static int load_triangle(qv_t(rows) *rows)
         qv_append(rows, numbers);
     }
 
+    sb_wipe(&sb);
+
     return 0;
 }
 
@@ -120,6 +122,8 @@ int main(int argc, char **argv)
     triangle_max_compute(&rows);
 
     e_info("max: %ju", rows.tab[0]->tab[0].max);
+
+    qv_deep_wipe(&rows, qv_delete);
 
     return 0;
 }
